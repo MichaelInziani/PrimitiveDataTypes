@@ -14,4 +14,13 @@ result = round(BMI_as_int, 0)
 # print("Your Body Mass Index(BMI) is:", result)
 
 # Printing using the f-string
-print(f"Your Body Mass Index(BMI) is {result}")
+if result < 18.5:
+  print(f"Your Body Mass Index(BMI) is {result}, you are underweight.")
+elif result < 25:
+    print(f"Your Body Mass Index(BMI) is {result}, you have normal weight.")
+elif result >= 25:
+    print(f"Your Body Mass Index(BMI) is {result}, you are slightly overweight.")
+elif result >= 30:
+    print(f"Your Body Mass is {result}, you are obese.")
+elif result >= 35:
+    print(f"Your Body Mass Index(BMI) is {result}, you are clinically obese.")
